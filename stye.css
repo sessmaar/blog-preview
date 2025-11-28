@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@500;800&display=swap");
+
+/* Setting the elemets for this whole card. Colors, Fonts, Spacing  */
+:root {
+  --primary-color: hsl(47, 88%, 63%);
+  --text-dark: hsl(0, 0%, 7%);
+  --text-grey: hsl(0, 0%, 42%);
+  --bg-white: hsl(0, 0%, 100%);
+  --spacing-50: 4px;
+  --spacing-100: 8px;
+  --spacing-150: 12px;
+  --spacing-300: 24px;
+  --font-family: "Figtree", sans-serif;
+  --line-height-base: 1.5;
+  --font-weight-medium: 500;
+  --font-weight-bold: 800;
+  --text-preset-1: 24px;
+  --text-preset-2: 16px;
+  --text-preset-3: 14px;
+}
+/*Removing default browser spacing and all other spacing so I can control the flow better */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* I made these changes to prevent overflow and keep the aspect ratio for all images */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Here we start by making it mobile first byt giving it a min height */
+body {
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: var(--font-family);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 384px;
+  background-color: var(--bg-white);
+  padding: var(--spacing-300);
+  border: 1.5px solid var(--text-dark);
+  gap: var(--spacing-300);
+  border-radius: 10px;
+  box-shadow: 8px 8px 0 0 rgba(0, 0, 0, 1);
+}
+.card img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+.learning {
+  background-color: var(--primary-color);
+  font-weight: var(--font-weight-bold);
+  padding: var(--spacing-100);
+  border-radius: 10px;
+  align-self: flex-start;
+}
+.date {
+  color: var(--text-grey);
+  align-self: flex-start;
+  font-size: var(--text-preset-3);
+  margin-bottom: var(--spacing-50);
+}
+.title {
+  color: var(--text-dark);
+  align-self: flex-start;
+  font-size: var(--text-preset-1);
+  font-weight: var(--font-weight-bold);
+}
+.content {
+  color: var(--text-grey);
+  align-items: flex-start;
+  line-height: var(--line-height-base);
+  font-size: var(--text-preset-2);
+}
+.image {
+  display: flex;
+  align-items: center;
+  align-self: flex-start;
+  gap: var(--spacing-150);
+}
+.image img {
+  width: 30px;
+  display: block;
+}
+.name {
+  font-weight: var(--font-weight-bold);
+}
+.attribution {
+  margin-top: 20px;
+}

@@ -26,7 +26,7 @@ This is my first official attempt at this challange. I have been learning CSS fo
 ### Links
 
 - Solution URL:
-- Live Site URL: https://sessmaar.github.io/qr-code-component/
+- Live Site URL: https://sessmaar.github.io/blog-preview/
 
 ## My process
 
